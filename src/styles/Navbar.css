@@ -1,0 +1,59 @@
+.navbar {
+  background: var(--navy-900);
+  border-bottom: 2px solid var(--gold);
+  padding: 0 2rem;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--shadow-md);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar-brand {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  color: var(--white);
+  letter-spacing: 0.02em;
+}
+.navbar-brand span {
+  color: var(--gold);
+}
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  list-style: none;
+}
+.navbar-links a {
+  color: var(--gray-300);
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.navbar-links a:hover {
+  color: var(--white);
+  background: rgba(255,255,255,0.08);
+}
+.navbar-links a.active {
+  color: var(--gold);
+}
+.btn-logout {
+  background: transparent;
+  border: 1.5px solid var(--gold);
+  color: var(--gold);
+  padding: 0.35rem 1rem;
+  border-radius: var(--radius);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.btn-logout:hover {
+  background: var(--gold);
+  color: var(--navy-900);
+}

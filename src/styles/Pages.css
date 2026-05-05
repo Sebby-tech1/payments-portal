@@ -1,0 +1,145 @@
+/* ── Send Payment ── */
+.send-page {
+  min-height: 100vh;
+  background: var(--off-white);
+}
+.page-container {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+.page-header {
+  margin-bottom: 2rem;
+}
+.page-header h2 {
+  font-size: 2rem;
+  color: var(--navy-800);
+}
+.page-header p {
+  color: var(--gray-500);
+  margin-top: 0.25rem;
+}
+.page-header .gold-line {
+  width: 48px;
+  height: 3px;
+  background: var(--gold);
+  margin-top: 0.75rem;
+}
+.form-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+}
+.form-card .form-group {
+  margin-bottom: 1.5rem;
+}
+.form-card label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--gray-500);
+  margin-bottom: 0.5rem;
+}
+.input-prefix {
+  position: relative;
+}
+.input-prefix span {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 1rem;
+}
+.input-prefix input {
+  padding-left: 2rem;
+}
+.btn-send {
+  width: 100%;
+  background: linear-gradient(135deg,
+var(--navy-800), var(--navy-700));
+  color: var(--white);
+  padding: 1rem;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 0.5rem;
+  box-shadow: var(--shadow-sm);
+}
+.btn-send:hover {
+  background: linear-gradient(135deg,
+var(--navy-700), var(--navy-600));
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+.btn-send:active {
+  transform: translateY(0);
+}
+/* ── Transactions ── */
+.transactions-page {
+  min-height: 100vh;
+  background: var(--off-white);
+}
+.transactions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+.transaction-item {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 4px solid var(--navy-700);
+  transition: var(--transition);
+  animation: fadeUp 0.3s ease both;
+}
+.transaction-item:hover {
+  transform: translateX(4px);
+  box-shadow: var(--shadow-md);
+}
+.transaction-info .tx-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gray-500);
+  font-weight: 600;
+}
+.transaction-info .tx-account {
+  font-weight: 600;
+  color: var(--navy-800);
+  font-size: 1rem;
+  margin-top: 0.1rem;
+}
+.transaction-info .tx-date {
+  font-size: 0.8rem;
+  color: var(--gray-300);
+  margin-top: 0.2rem;
+}
+.tx-amount {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  color: var(--danger);
+  font-weight: 700;
+}
+.tx-amount.credit {
+  color: var(--success);
+}
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--gray-300);
+}
+.empty-state p {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
